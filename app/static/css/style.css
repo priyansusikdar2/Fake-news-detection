@@ -1,0 +1,262 @@
+/* Main Styles for Fake News Detection System */
+
+:root {
+    --primary-color: #0d6efd;
+    --danger-color: #dc3545;
+    --success-color: #198754;
+    --warning-color: #ffc107;
+    --info-color: #0dcaf0;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Cards and Containers */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    border-bottom: none;
+    padding: 1rem 1.5rem;
+}
+
+/* Form Elements */
+.form-control {
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+textarea.form-control {
+    resize: vertical;
+    font-family: monospace;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), #0b5ed7);
+    border: none;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+}
+
+.btn-secondary:hover {
+    transform: translateY(-2px);
+}
+
+/* Progress Bar */
+.progress {
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.progress-bar {
+    transition: width 0.6s ease;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+/* Results Styling */
+#predictionBadge {
+    padding: 1rem;
+}
+
+.prediction-badge {
+    font-size: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    animation: fadeInUp 0.5s ease;
+}
+
+.badge-fake {
+    background: linear-gradient(135deg, var(--danger-color), #c82333);
+    color: white;
+    box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+}
+
+.badge-real {
+    background: linear-gradient(135deg, var(--success-color), #0f6848);
+    color: white;
+    box-shadow: 0 5px 15px rgba(25, 135, 84, 0.3);
+}
+
+/* Cards for Probabilities */
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeInUp 0.6s ease;
+}
+
+.animate-pulse {
+    animation: pulse 0.5s ease;
+}
+
+/* Loading Spinner */
+.spinner-border {
+    border-width: 0.2rem;
+}
+
+/* Footer */
+.footer {
+    margin-top: auto;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .d-md-flex {
+        flex-direction: column;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    h2.display-6 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0b5ed7;
+}
+
+/* Tooltips */
+[data-tooltip] {
+    position: relative;
+    cursor: pointer;
+}
+
+[data-tooltip]:before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    display: none;
+    z-index: 1000;
+}
+
+[data-tooltip]:hover:before {
+    display: block;
+}
+
+/* Model Status Indicator */
+.model-status {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.model-status i {
+    font-size: 8px;
+    vertical-align: middle;
+}
+
+/* Risk Level Colors */
+.risk-high {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+.risk-medium {
+    background-color: var(--warning-color);
+    color: #000;
+}
+
+.risk-low {
+    background-color: var(--success-color);
+    color: white;
+}
