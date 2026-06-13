@@ -64,4 +64,7 @@ dataset/*.csv
 # Temporary files
 tmp/
 temp/
-*.tmp
+*.tmp*.pt
+*.csv
+model/*.pt
+fake_news_env/
