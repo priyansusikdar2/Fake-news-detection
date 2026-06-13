@@ -13,9 +13,9 @@ model_dir.mkdir(exist_ok=True)
 
 # REPLACE THESE WITH YOUR ACTUAL FILE IDs FROM GOOGLE DRIVE
 MODEL_FILES = {
-    'best_model.pt': 'YOUR_BEST_MODEL_FILE_ID_HERE',    # ← Replace this
-    'final_model.pt': 'YOUR_FINAL_MODEL_FILE_ID_HERE',  # ← Replace this
-    'bert_model.pt': 'YOUR_BERT_MODEL_FILE_ID_HERE',    # ← Replace this
+    'best_model.pt': '1wBK2m-rBE6a0l54zyhONRrsFkNt5A-t2',    
+    'final_model.pt': '10dScCM2IyFARLE80cgNYnB5IBkbyz5cB',  
+    'bert_model.pt': '1H1QV5b34TrB98-pjRyYyVIENHfrvo2Qd',    
 }
 
 print("="*60)
