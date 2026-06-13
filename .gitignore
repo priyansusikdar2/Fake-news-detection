@@ -1,0 +1,67 @@
+# Virtual Environment
+fake_news_env/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Model files (too large for GitHub)
+*.pt
+*.pth
+*.bin
+*.h5
+*.onnx
+*.pb
+*.ckpt
+
+# Dataset files (large CSV files)
+*.csv
+*.xlsx
+*.json
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables
+.env
+.venv
+
+# Model artifacts
+model/*.pt
+model/*.pth
+results/
+logs/
+training_results/
+
+# Large data files
+Data/
+dataset/*.csv
+
+# Temporary files
+tmp/
+temp/
+*.tmp
