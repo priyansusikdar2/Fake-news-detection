@@ -1,8 +1,16 @@
-# 🛡️ Fake News Detection System
+## 🛡️ Fake News Detection System
 
 ### AI-Powered Truth Verification Engine
 
 **Detect misinformation instantly with BERT-powered deep learning**
+
+---
+
+![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python)
+![PyTorch](https://img.shields.io/badge/PyTorch-DeepLearning-red?logo=pytorch)
+![Transformers](https://img.shields.io/badge/HuggingFace-Transformers-yellow?logo=huggingface)
+![Flask](https://img.shields.io/badge/Flask-WebApp-black?logo=flask)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
@@ -12,10 +20,10 @@ In an era of information overload, distinguishing between real and fake news is 
 
 ### Key Capabilities
 
-- ⚡ Real-time analysis - Results in milliseconds
-- 🎯 92% accuracy - Validated on 40,000+ articles
-- 🔍 Explainable AI - Understand why content is flagged
-- 🌐 Web & API access - Flexible integration options
+* ⚡ Real-time analysis - Results in milliseconds
+* 🎯 92% accuracy - Validated on 40,000+ articles
+* 🔍 Explainable AI - Understand why content is flagged
+* 🌐 Web & API access - Flexible integration options
 
 ---
 
@@ -71,6 +79,8 @@ flowchart TB
     Output -.-> Results
 ```
 
+---
+
 ## 🔄 Prediction Pipeline
 
 ```mermaid
@@ -92,6 +102,8 @@ sequenceDiagram
     API->>UI: JSON response
     UI->>User: Result + confidence
 ```
+
+---
 
 ## 📊 Detection Workflow
 
@@ -115,26 +127,26 @@ flowchart LR
 
 ### 🎯 Core Features
 
-- Real-time Analysis
-- Confidence Scoring
-- Risk Assessment
-- Batch Processing
-- REST API Access
+* Real-time Analysis
+* Confidence Scoring
+* Risk Assessment
+* Batch Processing
+* REST API Access
 
 ### 🧠 Advanced Capabilities
 
-- Hybrid Detection
-- Clickbait Recognition
-- Source Verification
-- Conspiracy Detection
-- Technical Content Handling
+* Hybrid Detection
+* Clickbait Recognition
+* Source Verification
+* Conspiracy Detection
+* Technical Content Handling
 
 ### 📊 Visualization Features
 
-- Confidence Distribution Charts
-- Probability Bars
-- Historical Prediction Tracking
-- Model Performance Metrics
+* Confidence Distribution Charts
+* Probability Bars
+* Historical Prediction Tracking
+* Model Performance Metrics
 
 ---
 
@@ -142,9 +154,9 @@ flowchart LR
 
 ## Prerequisites
 
-- Python 3.9 or higher
-- 8GB RAM Recommended
-- 2GB Free Disk Space
+* Python 3.9 or higher
+* 8GB RAM Recommended
+* 2GB Free Disk Space
 
 ## Installation
 
@@ -162,8 +174,6 @@ source fake_news_env/bin/activate
 
 pip install -r requirements.txt
 
-python download_models.py
-
 python app/app.py
 ```
 
@@ -175,37 +185,58 @@ http://localhost:5000
 
 ---
 
+# 📥 Model Downloads
+
+Download the trained models manually and place them inside the `model/` directory.
+
+| Model File     | Download Link                                                                      |
+| -------------- | ---------------------------------------------------------------------------------- |
+| bert_model.pt  | https://drive.google.com/file/d/1H1QV5b34TrB98-pjRyYyVIENHfrvo2Qd/view?usp=sharing |
+| best_model.pt  | https://drive.google.com/file/d/1wBK2m-rBE6a0l54zyhONRrsFkNt5A-t2/view?usp=sharing |
+| final_model.pt | https://drive.google.com/file/d/10dScCM2IyFARLE80cgNYnB5IBkbyz5cB/view?usp=sharing |
+
+### Model Directory Structure
+
+```text
+model/
+├── bert_model.pt
+├── best_model.pt
+└── final_model.pt
+```
+
+---
+
 ## 📦 Model Files
 
-| File | Size | Description |
-|------|------|-------------|
-| best_model.pt | 255.9 MB | Highest accuracy model |
-| final_model.pt | 255.9 MB | Final trained model |
-| bert_model.pt | 417.7 MB | BERT backup model |
+| File           | Size     | Description            |
+| -------------- | -------- | ---------------------- |
+| best_model.pt  | 255.9 MB | Highest accuracy model |
+| final_model.pt | 255.9 MB | Final trained model    |
+| bert_model.pt  | 417.7 MB | BERT backup model      |
 
 ---
 
 ## 🎯 API Endpoints
 
-| Endpoint | Method |
-|-----------|--------|
-| /predict | POST |
-| /predict/batch | POST |
-| /health | GET |
-| /model/info | GET |
-| /calibrate | POST |
+| Endpoint       | Method |
+| -------------- | ------ |
+| /predict       | POST   |
+| /predict/batch | POST   |
+| /health        | GET    |
+| /model/info    | GET    |
+| /calibrate     | POST   |
 
 ---
 
 ## 📊 Model Performance
 
-| Metric | Score |
-|---------|-------|
-| Accuracy | 92% |
-| Precision | 91% |
-| Recall | 93% |
-| F1 Score | 92% |
-| ROC-AUC | 0.96 |
+| Metric    | Score |
+| --------- | ----- |
+| Accuracy  | 92%   |
+| Precision | 91%   |
+| Recall    | 93%   |
+| F1 Score  | 92%   |
+| ROC-AUC   | 0.96  |
 
 ---
 
@@ -221,24 +252,38 @@ SHOCKING: Government hiding alien evidence from public! Area 51 whistleblower le
 
 ---
 
-## 🛠️ Technology Stack
+# 🛠️ Technology Stack
 
-- Flask
-- Python 3.9+
-- PyTorch
-- Transformers
-- BERT / DistilBERT
-- scikit-learn
-- HTML5
-- CSS3
-- JavaScript
-- Bootstrap 5
-- Pandas
-- NumPy
-- NLTK
-- Matplotlib
-- Seaborn
-- Plotly
+## Core Technologies
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="70"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" width="70"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" width="70"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="70"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="70"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="70"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="70"/>
+</p>
+
+### Libraries & Frameworks
+
+* Flask
+* Python 3.9+
+* PyTorch
+* Transformers
+* BERT / DistilBERT
+* scikit-learn
+* HTML5
+* CSS3
+* JavaScript
+* Bootstrap 5
+* Pandas
+* NumPy
+* NLTK
+* Matplotlib
+* Seaborn
+* Plotly
 
 ---
 
@@ -253,11 +298,11 @@ curl -X POST http://localhost:5000/api/calibrate \
 ### Threshold Guide
 
 | Threshold | Sensitivity |
-|------------|------------|
-| 0.40-0.44 | Very High |
-| 0.45-0.48 | High |
-| 0.49-0.52 | Balanced |
-| 0.53-0.56 | Low |
+| --------- | ----------- |
+| 0.40-0.44 | Very High   |
+| 0.45-0.48 | High        |
+| 0.49-0.52 | Balanced    |
+| 0.53-0.56 | Low         |
 
 ---
 
@@ -269,6 +314,9 @@ fake-news-detection/
 ├── src/
 ├── notebooks/
 ├── model/
+│   ├── bert_model.pt
+│   ├── best_model.pt
+│   └── final_model.pt
 ├── requirements.txt
 ├── download_models.py
 └── README.md
@@ -294,11 +342,11 @@ MIT License
 
 ## 🙏 Acknowledgments
 
-- Hugging Face Transformers
-- PyTorch
-- Flask
-- scikit-learn
-- Bootstrap
+* Hugging Face Transformers
+* PyTorch
+* Flask
+* scikit-learn
+* Bootstrap
 
 ---
 
